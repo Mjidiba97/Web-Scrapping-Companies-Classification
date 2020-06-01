@@ -19,6 +19,9 @@ from openpyxl import load_workbook
 # Excel file name
 FILENAME = 'Data_Science_Internship_Assignment.xlsx'
 
+# download chromedriver and insert right path
+DRIVER_PATH = '/Users/aminemajdoubi/Downloads/chromedriver' 
+
 # Ignore warnings
 import warnings
 warnings.filterwarnings("ignore")
@@ -164,7 +167,7 @@ print("\nNote: a website will open automatically in a new chrome window. Don't p
 print("\nWeb Scrapping...")
 
 # load the website content
-driver = webdriver.Chrome("/Users/aminemajdoubi/Downloads/chromedriver") # download chromedriver and insert right path
+driver = webdriver.Chrome(DRIVER_PATH)
 
 # since the website needs time to load, you need to make the driver implicitly wait for 5 seconds and then reopen link
 driver.get("https://www.ycombinator.com/companies/")
