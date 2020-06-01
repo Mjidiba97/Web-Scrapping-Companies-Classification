@@ -1,1 +1,7 @@
-test
+For Entity Classification, since the column is EMPTY, we can't use directly a supervised learning approach. Instead we will be using a deterministic approach to classify the companies. First, I added the launch year feature. Then I cleaned the tagline column (steps commented in the code) and combined the extracted tags plus those of TAGS column. Then, based on the year and occurence of some keywords in the link, name and tags fields, I classified the entities. Finally, I exported the TYPE column and the count table to the Excel file.
+
+For Web Scrapping, I first loaded the website using selenium's webdriver class (in order to use it you have to install chromedriver). in order to properly load the website, you need use the load function twice and use the function 'implicitly_wait' between (the website takes a bit of time to load data). Then I created a Dataframe with all the extracted data in it. Finally, I exported the Dataframe the Excel file.
+
+The code contains two functions:
+- process_tagline: cleans the tagline text and converts it to tags
+- append_df_to_excel: appends a Dataframe to existing Excel file into a specific Sheet.
