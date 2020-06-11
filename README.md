@@ -1,4 +1,4 @@
-# Dealroom-DS-Assignment
+# Web Scrapping and Companies Classification
 Web Scrapping and Companies Classification
 
 The first task is <b>Entities Classification</b>. The excel file contains a sheet named 'Data', which is an export of startups from the Dealroom database. Each row corresponds to one five entities: startups, mature companies, universities/schools, government/non-profit and unclassified. The goal is to use the data in order to classify each entity into one these five categories. The result is to be exported into two sheets in the Excel file.
